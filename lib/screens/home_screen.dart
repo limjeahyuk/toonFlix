@@ -6,6 +6,7 @@ import 'package:toonflix/widgets/webtoon_widget.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
+  // api를 가져오는데 statelessWidget. > props가 없음.
   final Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
 
   @override
